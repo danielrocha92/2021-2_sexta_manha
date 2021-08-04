@@ -1,1 +1,8 @@
-# 2021-2_sexta_manha
+# 2021-2 - Sexta - Manhã
+Disciplina: 
+
+Prof. Thiago Graziani Traue (thiago.traue@uni9...)
+
+****
+
+
