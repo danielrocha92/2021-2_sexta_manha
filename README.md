@@ -40,7 +40,7 @@ Este professor não utiliza a presença como critério de avaliação.
 
 ## Bibliografia da disciplina e recomendada
 
- - Alessandria, S., Kayfitz B., **[Flutter Cookbook][https://learning.oreilly.com/library/view/flutter-cookbook/9781838823382/]**, Ed. Pact Publishing, 2021
+ - Alessandria, S., Kayfitz B., **[Flutter Cookbook](https://learning.oreilly.com/library/view/flutter-cookbook/9781838823382/)**, Ed. Pact Publishing, 2021
  - Schwarzmuller, **[Learn Flutter and Dart to Build iOS and Android Apps](https://learning.oreilly.com/videos/learn-flutter-and/9781789951998/)**, Ed. Pact Publishing, 2021
  - Windmill. E., **[Flutter in Action](https://learning.oreilly.com/library/view/flutter-in-action/9781617296147/)**, 2020
  - Sommerville I., **[Engenharia de Software](https://plataforma.bvirtual.com.br/Acervo/Publicacao/168127)**, 10ª ed., Ed. Pearson, 2019
