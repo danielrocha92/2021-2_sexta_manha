@@ -14,7 +14,7 @@ Essa disciplina ainda não demanda nenhuma atividade.
 
 ## Ementa básica
 
-O objetivo dessa disciplina é Prendermos a desenvolver aplicativos móveis, ou seja mobile, usando uma única base de código que, neste caso, é o Dart com Flutter.
+O objetivo dessa disciplina é aprendermos a desenvolver aplicativos móveis, ou seja mobile, usando uma única base de código que, neste caso, é o Dart com Flutter.
 
 Desenvolveremos Apps dos mais diversos para aprendermos a tecnoloiga de desenvolvimento móvel, utilizando arquiteutra BaaS (Backend as a Service) - Firebase, criação de rotas, MobX, Animações vetoriais com Rive etc.
 
