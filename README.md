@@ -31,7 +31,45 @@ O arquivo "ZIP" original poderá ser apagado depois disso.
 
 Entre na pasta do "flutter" (a que você extraiu no primeiro passo), e na pasta "bin". Copie o caminho com "Ctrl + C".
 
-Na barra de pesquisa do Windows, digitar "Variáveis de Ambiente". Clicar no botão "Variáveis de Ambiente" na interface que for exibida.
+Na barra de pesquisa do Windows, digitar "Variáveis de Ambiente". Abrir o "Editar Variáveis de Ambiente do Sistema".
+
+Clicar no botão "Variáveis de Ambiente" na interface que for exibida.
+
+No quadro superior (de cima) selecionar a variável "Path" e, em seguida, clicar no botão "Editar".
+
+Na nova interface que for exibida, clicar em "Novo" e COLAR o caminho do flutter\\bin, que copiamos agora pouco.
+
+Clicar "Ok" em todas telas.
+
+**TESTAR**: Rodar o comando abaixo no terminal:
+
+```
+flutter doctor
+```
+
+E verifique se o comando está reconhecido. **NÃO SE PREOCUPE COM OS ERROS** que aparecerem no terminal. Vamos corrigir um por um nos passos a seguir.
+
+
+### 3º passo - Android Studio
+
+Baixe e instale normalmente o Android Studio, [deste link](https://developer.android.com/studio).
+
+Assim que a instalação terminar, abra o Android Studio. Ele apresentará um assistente de configuração.
+
+Clique em "Do not import settings". Clique em "Next" em todas as etapas.
+
+Assim que o processo terminar, clique em "More Actions" (um link azul) e selecione "SDK Manager".
+
+Na tela que abrir, clique na aba "SDK Tools". Marque a opção "Android SDK Command-line Tools (latest)" e clique em OK. Aceite a licença e aguarde o fim da instalação.
+
+Feche o Android Studio.
+
+
+4ª Passo - Aceite de Licenças Android e correção do Path do AS
+
+ - **no dia 27.08 o professor mostra isso.**
+
+
 
 
 ## Ementa básica
