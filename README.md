@@ -12,6 +12,28 @@ Essa disciplina ainda não demanda nenhuma atividade.
 
 ## Preparação do ambiente
 
+A preparação do ambiente é bastante simples, mas requer muita atenção aos detalhes.
+
+### 1º passo - Download do Flutter SDK
+
+Acessar o [site oficial do Flutter](https://flutter.dev/), clicar em "DOCS", "Get Startet" e, sem seguida, selecionar o seu Sistema Operacional.
+
+Baixar e extrair normalmente a versão mais recente da SDK do Flutter ("botão azul").
+
+Assim que terminar a extração, mover a pasta "flutter" (que estava dentro do arquivo comprimido - zip), para um local SEGURO (que você não apagará acidentalmente) como, por exemplo "C:\\flutter".
+
+**Muito importante**: O caminho onde você colocará essa pasta **NÃO PODE** conter espaços e/ou caracteres especiais.
+
+O arquivo "ZIP" original poderá ser apagado depois disso.
+
+
+### 2º passo - Variáveis do ambiente - Windows
+
+Entre na pasta do "flutter" (a que você extraiu no primeiro passo), e na pasta "bin". Copie o caminho com "Ctrl + C".
+
+Na barra de pesquisa do Windows, digitar "Variáveis de Ambiente". Clicar no botão "Variáveis de Ambiente" na interface que for exibida.
+
+
 ## Ementa básica
 
 O objetivo dessa disciplina é aprendermos a desenvolver aplicativos móveis, ou seja mobile, usando uma única base de código que, neste caso, é o Dart com Flutter.
@@ -23,9 +45,9 @@ Desenvolveremos Apps dos mais diversos para aprendermos a tecnoloiga de desenvol
 
 Este professor utilizará unica e exclusivamente atividades de múltipla escolha (de 4 a 6 atividades durante o semestre), disponibilizadas neste Git, através do Google Forms e com prazo mínimo de 14 dias para serem realizadas. Todas as atividades são teóricas em relação ao conteúdo.
 
-A média final deste professor é calculada simplesmente pel média das atividades. 
+A média final deste professor é calculada simplesmente pel média das atividades.
 
-Este professor não aplica nenhuma prova durante o semestre. 
+Este professor não aplica nenhuma prova durante o semestre.
 
 De qualquer maneira, a média final de cada disciplina de vocês **normalmente** é calculada da seguinte forma:
 
@@ -45,7 +67,7 @@ Este professor não utiliza a presença como critério de avaliação.
  - Windmill. E., **[Flutter in Action](https://learning.oreilly.com/library/view/flutter-in-action/9781617296147/)**, 2020
  - Sommerville I., **[Engenharia de Software](https://plataforma.bvirtual.com.br/Acervo/Publicacao/168127)**, 10ª ed., Ed. Pearson, 2019
  - Martin, R. C., **[Clean Architecture: A Craftsman’s Guide to Software Structure and Design](https://learning.oreilly.com/library/view/clean-architecture-a/9780134494272/)**, Ed. Pearson. 2017
- 
+
 
 
 ## Links extras interessantes
