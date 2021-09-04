@@ -1,11 +1,8 @@
 void main() {
-  criarBotao(
-    texto: "Vai",
-    altura: 100
-  );
+  criarBotao(texto: "Vai", altura: 100);
 }
 
-void criarBotao({String texto, String cor, double largura, double altura}) {
+void criarBotao({String? texto, String? cor, double? largura, double? altura}) {
   print("Criei um botão assim: ");
   print("Texto: $texto");
   print("Cor: ${cor ?? "Cinza"}");

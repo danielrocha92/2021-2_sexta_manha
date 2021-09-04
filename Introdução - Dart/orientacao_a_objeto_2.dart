@@ -1,13 +1,11 @@
 class Botao {
-  String cor;
-  String texto;
+  String? cor;
+  String? texto;
 
   Botao({this.cor, this.texto});
-
 }
 
 class Pessoa {
-
   //atributos:
   String nome;
   String email;
@@ -25,7 +23,6 @@ class Pessoa {
   //como usaremos, de forma menos verbosa:
   Pessoa(this.nome, this.email, this.idade, this.fumante);
 
-
   void fazerAniversario() {
     idade++; //++ é a mesma coisa que idade = idade + 1
     print("ôba, festinha com todos mascarados");
@@ -39,7 +36,6 @@ class Pessoa {
     print("Hmmm, adoro comer ${comida}");
   }
 }
-
 
 void main() {
   Pessoa p = Pessoa("Thiago Traue", "thiago.traue@uni9.pro.br", 34, false);
@@ -62,10 +58,6 @@ void main() {
 
   p.comer("nutella");
 
-
   //só um exemplo:
-  Botao bt = Botao(
-    texto: "Oi",
-    cor: "Verde"
-  );
+  Botao bt = Botao(texto: "Oi", cor: "Verde");
 }

@@ -1,13 +1,12 @@
 class Pessoa {
-
   //atributos:
-  String nome;
-  String email;
-  int idade;
-  bool fumante;
+  String? nome;
+  String? email;
+  int? idade;
+  bool? fumante;
 
   void fazerAniversario() {
-    idade++; //++ é a mesma coisa que idade = idade + 1
+    idade ?? idade! + 1; //++ é a mesma coisa que idade = idade + 1
     print("ôba, festinha com todos mascarados");
   }
 
@@ -19,7 +18,6 @@ class Pessoa {
     print("Hmmm, adoro comer ${comida}");
   }
 }
-
 
 void main() {
   Pessoa p = Pessoa();

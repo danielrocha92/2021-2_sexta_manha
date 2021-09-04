@@ -1,6 +1,6 @@
 class Pessoa {
-  String nome;
-  int idade;
+  String? nome;
+  int? idade;
 
   Pessoa({this.nome, this.idade});
 }
@@ -8,20 +8,9 @@ class Pessoa {
 void main() {
   List<Pessoa> pessoas = [];
 
-  pessoas.add(
-    Pessoa(
-      nome: "Fulano",
-      idade: 20
-    )
-  );
+  pessoas.add(Pessoa(nome: "Fulano", idade: 20));
 
-  pessoas.add(
-    Pessoa(
-      nome: "Allisson",
-      idade: 18
-    )
-  );
-
+  pessoas.add(Pessoa(nome: "Allisson", idade: 18));
 
   //laço for:
 //   for(int i = 0; i < pessoas.length; i++) {
@@ -41,7 +30,7 @@ void main() {
 //   } while(j < pessoas.length);
 
   //for each (para cada)
-  for(Pessoa p in pessoas) {
+  for (Pessoa p in pessoas) {
     print("Nome: ${p.nome}, ${p.idade} anos");
   }
 }
