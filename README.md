@@ -7,6 +7,8 @@
 
 ## Link das atividades
 
+Utilize seu e-mail institucional para acessar as atividades.
+
 
  - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/79sdnicRfbnipMJS9) - De 01.10 até 08.10, 9h
 
