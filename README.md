@@ -135,3 +135,5 @@ Este professor não utiliza a presença como critério de avaliação.
  - [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv)
  - [Canal do Fábio Akita](https://www.youtube.com/c/FabioAkita1990/videos)
  - [Technology Radar](https://www.thoughtworks.com/pt/radar)
+ - Vídeo: [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM)
+ - Vídeo [https://www.youtube.com/watch?v=SLc3cTlypwM](https://www.youtube.com/watch?v=SLc3cTlypwM)

@@ -22,8 +22,7 @@ class _HomeState extends State<Home> {
 
   void _calculaCombustivelIdeal() {
     double vAlcool = double.parse(alcoolController.text.replaceAll(',', '.'));
-    double vGasolina =
-    double.parse(gasolinaController.text.replaceAll(',', '.'));
+    double vGasolina = double.parse(gasolinaController.text.replaceAll(',', '.'));
     double proporcao = vAlcool / vGasolina;
 
     //se a proporção é menor do 0.7, então vale mais a pena abastecer com alcool
@@ -37,8 +36,7 @@ class _HomeState extends State<Home> {
     //é a mesma coisa que:
 
     setState(() {
-      _resultado =
-      (proporcao < 0.7) ? "Abasteça com Álcool" : "Abasteça com Gasolina";
+      _resultado = (proporcao < 0.7) ? "Abasteça com Álcool" : "Abasteça com Gasolina";
     });
   }
 
