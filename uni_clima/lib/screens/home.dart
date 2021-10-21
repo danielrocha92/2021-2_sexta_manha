@@ -49,10 +49,10 @@ class _HomeState extends State<Home> {
     const String _path = "/data/2.5/weather";
 
     final _parametros = {
-      "q" : _cidadeSelecionada,
-      "appid" : _appid,
-      "lang" : _lang,
-      "units" : _units
+      "q": _cidadeSelecionada,
+      "appid": _appid,
+      "lang": _lang,
+      "units": _units
     };
 
     //paramos aqui
@@ -67,9 +67,7 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
         child: Column(
-          children: [
-            _buildList(_cidades)
-          ],
+          children: [_buildList(_cidades)],
         ),
       ),
     );
@@ -87,13 +85,12 @@ class _HomeState extends State<Home> {
           if (value == null || value == "") {
             _cidadeSelecionada = "Selecione uma cidade";
           } else {
-            _cidadeSelecionada = value!;
+            _cidadeSelecionada = value;
           }
         });
       },
-      validator: (value) => value == null || value.isEmpty
-          ? "Selecione uma cidade"
-          : null,
+      validator: (value) =>
+          value == null || value.isEmpty ? "Selecione uma cidade" : null,
       autoValidateMode: AutovalidateMode.onUserInteraction,
       showClearButton: true,
       clearButton: const Icon(Icons.close),
