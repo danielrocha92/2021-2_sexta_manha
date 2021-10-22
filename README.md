@@ -12,6 +12,7 @@ Utilize seu e-mail institucional para acessar as atividades.
 
  - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/79sdnicRfbnipMJS9) - De 01.10 até 03.12, 9h
  - Atividade 2: [LINK DA ATIVIDADE](https://forms.gle/gNvir2tULbpB7MmB8) - De 15.10 até 03.12, 9h
+ - Atividade 3: [LINK DA ATIVIDADE](https://forms.gle/pfKuhX12491Earwd6) - De 22.10 até 03.12, 9h
 
 
 ## Preparação do ambiente
