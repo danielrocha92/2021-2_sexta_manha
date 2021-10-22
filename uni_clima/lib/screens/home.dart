@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:dropdown_search/dropdown_search.dart';
+import 'package:uni_clima/model/clima_model.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -9,6 +12,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  late ClimaModel climaModel;
+
   final List<String> _cidades = [
     "Aracaju",
     "Belém",
@@ -55,7 +60,17 @@ class _HomeState extends State<Home> {
       "units": _units
     };
 
-    //paramos aqui
+    final climaResponse =
+        await http.get(Uri.https(_apiURL, _path, _parametros));
+
+    //Apenas para verificar se a URL foi montada adequadamente:
+    //print('Url montada: ' + climaResponse.request.url.toString());
+
+    if (climaResponse.statusCode == 200) {
+      setState(() {
+        climaModel = ClimaModel.fromJson(jsonDecode(climaResponse.body));
+      });
+    }
   }
 
   @override
@@ -86,6 +101,7 @@ class _HomeState extends State<Home> {
             _cidadeSelecionada = "Selecione uma cidade";
           } else {
             _cidadeSelecionada = value;
+            carregaClima();
           }
         });
       },
