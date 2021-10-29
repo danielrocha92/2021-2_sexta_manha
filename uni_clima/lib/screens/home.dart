@@ -48,7 +48,6 @@ class _HomeState extends State<Home> {
 
   String _cidadeSelecionada = "São Paulo";
 
-
   @override
   void initState() {
     super.initState();
@@ -60,7 +59,7 @@ class _HomeState extends State<Home> {
       isLoading = true;
     });
 
-    const String _appid = "70490ee3c06c559a659a5d846008bbd3"; //SUA chave da API
+    const String _appid = ""; //SUA chave da API
     const String _lang = "pt_br";
     const String _units = "metric";
     const String _apiURL = "api.openweathermap.org";
