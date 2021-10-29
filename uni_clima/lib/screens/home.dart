@@ -4,6 +4,8 @@ import 'package:uni_clima/model/clima_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'package:uni_clima/widgets/clima_widget.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -13,7 +15,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late ClimaModel climaModel;
-
+  bool isLoading = false;
   final List<String> _cidades = [
     "Aracaju",
     "Belém",
@@ -46,8 +48,19 @@ class _HomeState extends State<Home> {
 
   String _cidadeSelecionada = "São Paulo";
 
+
+  @override
+  void initState() {
+    super.initState();
+    carregaClima();
+  }
+
   carregaClima() async {
-    const String _appid = ""; //SUA chave da API
+    setState(() {
+      isLoading = true;
+    });
+
+    const String _appid = "70490ee3c06c559a659a5d846008bbd3"; //SUA chave da API
     const String _lang = "pt_br";
     const String _units = "metric";
     const String _apiURL = "api.openweathermap.org";
@@ -69,6 +82,7 @@ class _HomeState extends State<Home> {
     if (climaResponse.statusCode == 200) {
       setState(() {
         climaModel = ClimaModel.fromJson(jsonDecode(climaResponse.body));
+        isLoading = false;
       });
     }
   }
@@ -82,7 +96,46 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
         child: Column(
-          children: [_buildList(_cidades)],
+          children: [
+            _buildList(_cidades),
+            Expanded(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                    padding: EdgeInsets.all(6),
+                    child: isLoading
+                        ? const CircularProgressIndicator(
+                            strokeWidth: 3,
+                            valueColor: AlwaysStoppedAnimation(Colors.blue),
+                          )
+                        : climaModel != null
+                            ? ClimaWidget(climaModel: climaModel)
+                            : Container(
+                                child: Text(
+                                  "Sem dados para exibir",
+                                  style: Theme.of(context).textTheme.headline3,
+                                ),
+                              )),
+                Padding(
+                    padding: EdgeInsets.all(8),
+                    child: isLoading
+                        ? Container(
+                            child: Text(
+                              "Carregando...",
+                              style: Theme.of(context).textTheme.headline5,
+                            ),
+                          )
+                        : IconButton(
+                            onPressed: carregaClima,
+                            icon: const Icon(Icons.refresh),
+                            color: Colors.blue,
+                            iconSize: 50,
+                            tooltip: "Recarrega o clima",
+                          ))
+              ],
+            ))
+          ],
         ),
       ),
     );
@@ -94,6 +147,7 @@ class _HomeState extends State<Home> {
       showSelectedItems: true,
       maxHeight: MediaQuery.of(context).size.height - 100,
       items: listData,
+      selectedItem: _cidadeSelecionada,
       showSearchBox: true,
       onChanged: (value) {
         setState(() {
@@ -108,7 +162,7 @@ class _HomeState extends State<Home> {
       validator: (value) =>
           value == null || value.isEmpty ? "Selecione uma cidade" : null,
       autoValidateMode: AutovalidateMode.onUserInteraction,
-      showClearButton: true,
+      showClearButton: false,
       clearButton: const Icon(Icons.close),
     );
   }

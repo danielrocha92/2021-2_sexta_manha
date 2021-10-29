@@ -7,7 +7,8 @@ ThemeData darkTheme() {
     appBarTheme: AppBarTheme(color: Colors.blueGrey[800]),
     textTheme: const TextTheme(
       headline3: TextStyle(fontSize: 23, fontWeight: FontWeight.w200),
-      headline4: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)
+      headline4: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+      headline2: TextStyle(fontSize: 20)
     )
   );
 }
@@ -19,7 +20,8 @@ ThemeData lightTheme() {
       appBarTheme: AppBarTheme(color: Colors.deepPurple[700]),
       textTheme: const TextTheme(
           headline3: TextStyle(fontSize: 23, fontWeight: FontWeight.w200),
-          headline4: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)
+          headline4: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          headline2: TextStyle(fontSize: 20)
       )
   );
 }
